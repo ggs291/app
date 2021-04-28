@@ -974,6 +974,8 @@ export default {
           this.getTemplates()
 
           this.widgets = []
+          this.templateName = []
+          this.templateDescription = []
         }
       } catch (error) {
           this.$notify({
