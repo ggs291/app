@@ -74,6 +74,16 @@ export default {
     mqtt_port: process.env.MQTT_PORT
   },
 
+  server: {
+    port: 3000, //Default: 3000
+    host: '0.0.0.0' //Default: localhost
+  },
+
+  //Arrancar Api NUxt
+  serverMiddleware: {
+    '/api': '~/api'
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
