@@ -64,6 +64,7 @@ try {
         console.log("- Mongo Sucessfully conected!".green)
         console.log("*****************************".green)
         console.log("\n")
+        global.check_mqtt_superuser();
     },
     (err) => {
         console.log("\n")
