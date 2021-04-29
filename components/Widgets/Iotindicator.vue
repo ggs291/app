@@ -16,7 +16,26 @@
         data() {
             return{
                 value: false,
+                topic: "",
+                props: ['config']
              };
+        },
+        watch: {
+            config: {
+                inmediate: true,
+                deep: true,
+                handler() {
+                    setTimeout(() => {
+                        this.value = false
+
+                        this.$nuxt.$off(this.topic)
+
+                        //userId/did/uniquestr/sdata
+                        const topic = this.config.userId + "/" + this.cpnfig.selectedDevice.dId + "/" + this.config.variable + "/sdata"
+                        this.$nuxt.$on(topic, this.processReceivedData)
+                    }, 300);
+                }
+            }
         },
         mounted(){
              //userId/dId/uniquestr/sdata
