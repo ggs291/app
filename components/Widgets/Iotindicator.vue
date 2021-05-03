@@ -11,6 +11,7 @@
 </template>
 
 <script>
+    const topic = ""
     export default {
         props: ['config'],
         data() {
@@ -25,27 +26,37 @@
                 inmediate: true,
                 deep: true,
                 handler() {
+                    
+                    this.$nuxt.$off(this.topic, this.processReceivedData) 
                     setTimeout(() => {
-                        this.value = false
-
-                        this.$nuxt.$off(this.topic)
-
+                        //this.value = false
+                        this.topic = ""
                         //userId/did/uniquestr/sdata
-                        const topic = this.config.userId + "/" + this.cpnfig.selectedDevice.dId + "/" + this.config.variable + "/sdata"
+                        this.topic = this.config.userId + "/" + this.config.selectedDevice.dId + "/" + this.config.variable + "/sdata"
                         this.$nuxt.$on(topic, this.processReceivedData)
+                        console.log(topic)
+                        console.log("AQUI ESTOY :::::")
+                        
                     }, 300);
+                    this.value = false
                 }
             }
         },
         mounted(){
              //userId/dId/uniquestr/sdata
+            this.topic = ""
             const topic = this.config.userId + "/" + this.config.selectedDevice.dId + "/" + this.config.variable + "/sdata";
             console.log(topic);
             this.$nuxt.$on(topic, this.processReceivedData)
+            
+            
+           
         },
         
         beforeDestroy(){
-            this.$nuxt.$off(this.config.userId + "/" + this.config.selectedDevice.dId + "/" + this.config.variable + "/sdata", this.processReceivedData)
+
+            this.value = 0
+           this.$nuxt.$off(this.config.userId + "/" + this.config.selectedDevice.dId + "/" + this.config.variable + "/sdata", this.processReceivedData)
         },
 
         methods: {
@@ -53,8 +64,8 @@
 
                 try {
                     console.log("Receive")
-                console.log(data)
-                this.value = data.value
+                    console.log(data)
+                    this.value = data.value
                 } catch (error) {
                     console.log(error)
                 }

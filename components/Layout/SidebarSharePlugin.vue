@@ -32,6 +32,18 @@
         </li>
 
         <li class="button-container mt-4">
+          <a 
+            href="https://misiot.000webhostapp.com/"
+            target="blank"
+            rel="noopener"
+            class="btn btn-default btn-block btn-round"
+          >
+            Info
+          </a>
+
+        </li>
+        <!--
+        <li class="button-container mt-4">
           <a
             href="https://www.creative-tim.com/learning-lab/nuxt/overview/black-dashboard"
             target="_blank"
@@ -56,7 +68,7 @@
           >
             Upgrade to PRO
           </a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
