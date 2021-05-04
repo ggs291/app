@@ -91,7 +91,7 @@ async function createResourses(){
                 headers: {
                     token: process.env.EMQX_API_TOKEN
                 },
-                meetod: "POST"
+                method: "POST"
             },
             description: "saver-webhook"
         }
@@ -103,7 +103,7 @@ async function createResourses(){
                 headers: {
                     token: process.env.EMQX_API_TOKEN
                 },
-                meetod: "POST"
+                method: "POST"
             },
             description: "alarm-webhook"
         }
@@ -172,7 +172,7 @@ global.check_mqtt_superuser = async function checkMqttSuperUser(){
   
   
   setTimeout(() => {
-    console.log("LISTING RESORUCES!!!!!!!!!");
+    console.log("LISTING RESOURCES!!!!!!!!!");
     listResources();
   }, process.env.EMQX_RESOURCES_DELAY);
 
