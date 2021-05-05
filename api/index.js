@@ -70,6 +70,7 @@ try {
         console.log("\n")
         console.log("**************************".red)
         console.log("- Mongo Connection Failed!".red)
+        console.log(url)
         console.log("**************************".red)
         console.log("\n")
     }
