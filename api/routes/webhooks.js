@@ -306,12 +306,12 @@ function startMqttClient() {
         console.log("\n")
     })
 
-    client.on('reconnect', (error) => {
+    client.on('reconnect', error => {
         console.log("RECONNECTING MQTT")
         console.log(error)
     })
 
-    client.on('error', (error) => {
+    client.on('error', error => {
         console.log("MQTT CONNECTION FAIL =>")
         console.log(error)
     })
