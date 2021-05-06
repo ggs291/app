@@ -34,7 +34,7 @@ app.listen(process.env.API_PORT, () => {
     console.log("API server listening on port " + process.env.API_PORT)
 })
 
-if (process.env.environment != "lap") {
+if (process.env.environment != "dev") {
     const app2 = express()
 
     app2.listen(3002, function(){
