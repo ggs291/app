@@ -199,7 +199,7 @@
         const deviceSubscribeTopic = this.$store.state.auth.userData._id + "/+/+/sdata"
         const notifSubscribeTopic = this.$store.state.auth.userData._id + "/+/+/notif"
 
-        const connectUrl = process.env.mqtt_prefix + this.options.host + ":" + this.options.port + this.options.endpoint
+        const connectUrl = process.env.mqtt_prefix + this.options.host + this.options.endpoint
 
         try {
 
