@@ -213,25 +213,25 @@
               >
                 <el-option class="text-dark"
                   value="col-md-3"
-                  label="col-md-3"
+                  label="4 Widgets Columns"
                 >
                 </el-option>
 
                 <el-option class="text-dark"
                   value="col-md-4"
-                  label="col-md-4"
+                  label="3 Widgets Columns"
                 >
                 </el-option>
 
                 <el-option class="text-dark"
                   value="col-md-6"
-                  label="col-md-6"
+                  label="2 Widgets Columns"
                 >
                 </el-option>
 
                 <el-option class="text-dark"
                   value="col-md-12"
-                  label="col-md-12"
+                  label="A Widgets Column"
                 >
                 </el-option>
               </el-select>
@@ -359,32 +359,31 @@
 
                 <el-option class="text-dark"
                   value="col-md-3"
-                  label="col-md-3"
+                  label="4 Widgets Columns"
                 >
                 </el-option>
 
                 <el-option class="text-dark"
                   value="col-md-4"
-                  label="col-md-4"
+                  label="3 Widgets Columns"
                 >
                 </el-option>
 
                 <el-option class="text-dark"
                   value="col-md-6"
-                  label="col-md-6"
+                  label="2 Widgets Columns"
                 >
                 </el-option>
 
                 <el-option class="text-dark"
                   value="col-md-12"
-                  label="col-md-12"
+                  label="A Widget Column"
                 >
                 </el-option>
 
               </el-select>
 
             </div>
-
 
             <!-- FORM BUTTON TYPE -->
 
@@ -521,25 +520,25 @@
 
                 <el-option class="text-dark"
                   value="col-md-3"
-                  label="col-md-3"
+                  label="4 Widgets Columns"
                 >
                 </el-option>
 
                 <el-option class="text-dark"
                   value="col-md-4"
-                  label="col-md-4"
+                  label="3 Widgets Column"
                 >
                 </el-option>
 
                 <el-option class="text-dark"
                   value="col-md-6"
-                  label="col-md-6"
+                  label="2 Widgets Columns"
                 >
                 </el-option>
 
                 <el-option class="text-dark"
                   value="col-md-12"
-                  label="col-md-12"
+                  label="A Widget Column"
                 >
                 </el-option>
               </el-select>
@@ -682,25 +681,25 @@
 
                <el-option class="text-dark"
                   value="col-md-3"
-                  label="col-md-3"
+                  label="4 Widgets Columns"
                 >
                 </el-option>
 
                 <el-option class="text-dark"
                   value="col-md-4"
-                  label="col-md-4"
+                  label="3 Widgets Columns"
                 >
                 </el-option>
 
                 <el-option class="text-dark"
                   value="col-md-6"
-                  label="col-md-6"
+                  label="2 Widgets Columns"
                 >
                 </el-option>
 
                 <el-option class="text-dark"
                   value="col-md-12"
-                  label="col-md-12"
+                  label="A Widget Column"
                 >
                 </el-option> 
               </el-select>
