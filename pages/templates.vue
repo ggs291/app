@@ -83,13 +83,76 @@
               >
               </base-input>
 
-              <base-input
+              <!--<base-input
               v-model="ncConfig.icon"
               label="Icon"
               type="text"
               >
-              </base-input>
+              </base-input> -->
+              
+              Select Icon
+              <el-select v-model="ncConfig.icon"
+              class="select-success"
+              placeholder="Select Icon"
+              style="width: 100%;"
+              >
 
+                <el-option class="text-icon"
+                value="fa-cloud"
+                label="Nube"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-wind"
+                label="Wind"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-thermometer-half"
+                label="Thermometer"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-water"
+                label="Water"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-gas-pump"
+                label="Gas"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-fire"
+                label="Fire"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-burn"
+                label="Burn"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-percent"
+                label="Humidity %"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-sun"
+                label="Sun"
+                >
+                </el-option>
+
+              </el-select>
+              <br>
               <br>
 
               <base-input 
@@ -109,7 +172,7 @@
               </base-input>
 
               <br>
-
+              Select Class
               <el-select v-model="ncConfig.class"
                 class="select-success"
                 placeholder="Select Class"
@@ -141,12 +204,12 @@
                 </el-option>
               </el-select>
 
-              <br><br>
-
+              <br><br>Column Width
+              
               <el-select v-model="ncConfig.column"
                 class="select-success"
                 placeholder="Select Column Width"
-                style="width 100%;"
+                style="width: 100%;"
               >
                 <el-option class="text-dark"
                   value="col-md-3"
@@ -161,44 +224,8 @@
                 </el-option>
 
                 <el-option class="text-dark"
-                  value="col-md-5"
-                  label="col-md-5"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
                   value="col-md-6"
                   label="col-md-6"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-7"
-                  label="col-md-7"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-8"
-                  label="col-md-8"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-9"
-                  label="col-md-9"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-10"
-                  label="col-md-10"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-11"
-                  label="col-md-11"
                 >
                 </el-option>
 
@@ -210,7 +237,6 @@
               </el-select>
             </div>
 
-            <br><br>
 
             <!-- FORM SWITCH TYPE -->
             <div
@@ -224,13 +250,66 @@
               >
               </base-input>
 
-              <base-input
+              <!--<base-input
                 v-model="configSwitch.icon"
                 label="Icon"
                 type="text"
               >
-              </base-input>
+              </base-input>-->
 
+              Select Icon
+              <el-select v-model="configSwitch.icon"
+              class="select-success"
+              placeholder="Select Icon"
+              style="width: 100%;"
+              >
+
+                <el-option class="text-icon"
+                value="fa-plug"
+                label="Plug"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-toggle-on"
+                label="Toggle"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-radiation"
+                label="Radiation"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-bolt"
+                label="Bolt"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-radiation"
+                label="Fan"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-atom"
+                label="Atom"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-burn"
+                label="Burn"
+                >
+                </el-option>
+
+              </el-select>
+              <br>
+              <br>
+              Select Class
               <el-select 
                 v-model="configSwitch.class"
                 class="select-success"
@@ -267,8 +346,10 @@
 
               </el-select>
 
-              <br><br>
+              <br>
+              <br>
 
+              Column width
               <el-select
                 v-model="configSwitch.column"
                 class="select-success"
@@ -289,44 +370,8 @@
                 </el-option>
 
                 <el-option class="text-dark"
-                  value="col-md-5"
-                  label="col-md-5"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
                   value="col-md-6"
                   label="col-md-6"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-7"
-                  label="col-md-7"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-8"
-                  label="col-md-8"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-9"
-                  label="col-md-9"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-10"
-                  label="col-md-10"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-11"
-                  label="col-md-11"
                 >
                 </el-option>
 
@@ -340,7 +385,6 @@
 
             </div>
 
-            <br><br>
 
             <!-- FORM BUTTON TYPE -->
 
@@ -367,15 +411,68 @@
               >
               </base-input>
 
-              <base-input 
+              <!--<base-input 
                 v-model="configButton.icon"
                 label="Icon"
                 type="text"
               >
-              </base-input>
+              </base-input>-->
+
+             Select Icon
+              <el-select v-model="configButton.icon"
+              class="select-success"
+              placeholder="Select Icon"
+              style="width: 100%;"
+              >
+
+                <el-option class="text-icon"
+                value="fa-stop"
+                label="Emergency Stop"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-plus-circle"
+                label="Plus Button"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-power-off"
+                label="Power"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-cog"
+                label="Start"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-th"
+                label="Multiple Control"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-lock"
+                label="Lock"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-crosshairs"
+                label="Init Button"
+                >
+                </el-option>
+
+              </el-select>
+              <br> 
 
               <br>
 
+              Select Class
               <el-select 
                 v-model="configButton.class"
                 class="select-success"
@@ -414,6 +511,7 @@
 
               <br><br>
 
+              Column width
               <el-select
                 v-model="configButton.column"
                 class="select-success"
@@ -434,44 +532,8 @@
                 </el-option>
 
                 <el-option class="text-dark"
-                  value="col-md-5"
-                  label="col-md-5"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
                   value="col-md-6"
                   label="col-md-6"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-7"
-                  label="col-md-7"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-8"
-                  label="col-md-8"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-9"
-                  label="col-md-9"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-10"
-                  label="col-md-10"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-11"
-                  label="col-md-11"
                 >
                 </el-option>
 
@@ -484,8 +546,6 @@
 
             </div>
 
-            <br><br>
-
             <!-- FORM INDICATOR TYPE -->
             <div v-if="widgetType == 'indicator'">
 
@@ -496,12 +556,75 @@
               >
               </base-input>
 
-              <base-input
+              <!--<base-input
                 v-model="configIndicator.icon"
                 label="Icon"
                 type="text"
               >
-              </base-input>
+              </base-input>-->
+
+              Select Icon
+              <el-select v-model="configIndicator.icon"
+              class="select-success"
+              placeholder="Select Icon"
+              style="width: 100%;"
+              >
+
+                <el-option class="text-icon"
+                value="fa-circle"
+                label="Circle"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-circle-notch"
+                label="Notch"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-lightbulb"
+                label="Bulb"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-solar-panel"
+                label="Panel"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-microchip"
+                label="Microchip"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-fan"
+                label="Fan"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-door-open"
+                label="Door"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-bell"
+                label="Bell"
+                >
+                </el-option>
+
+                <el-option class="text-icon"
+                value="fa-lock"
+                label="Lock"
+                >
+                </el-option>
+
+              </el-select>
 
               <br>
 
@@ -512,7 +635,7 @@
               ></base-input>
 
               <br>
-
+              Select Class
               <el-select v-model="configIndicator.class"
                 class="select-success"
                 placeholder="Select Class"
@@ -550,7 +673,7 @@
               </el-select>
 
               <br><br><br>
-
+              Column Width
               <el-select 
                 v-model="configIndicator.column"
                 class="select-success"
@@ -570,44 +693,8 @@
                 </el-option>
 
                 <el-option class="text-dark"
-                  value="col-md-5"
-                  label="col-md-5"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
                   value="col-md-6"
                   label="col-md-6"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-7"
-                  label="col-md-7"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-8"
-                  label="col-md-8"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-9"
-                  label="col-md-9"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-10"
-                  label="col-md-10"
-                >
-                </el-option>
-
-                <el-option class="text-dark"
-                  value="col-md-11"
-                  label="col-md-11"
                 >
                 </el-option>
 
@@ -857,14 +944,14 @@ export default {
         variableFullName: "Volts",
         variable: "varname",
         variableType: "input",
-        variableSendFreq: "30",
+        variableSendFreq: "10",
         unit: "Watts",
         class: "success",
         column: "col-md-6",
         decimalPlaces: "2",
         widget: "numberchart",
-        icon: "fa-cloud",
-        chartTimeAgo: 1566,
+        icon: "fa-thermometer-half",
+        chartTimeAgo: 60,
         demo: true
       },
 
@@ -879,7 +966,7 @@ export default {
         variableType: "output",
         class: "danger",
         widget: "switch",
-        icon: "fa-toggle-off",
+        icon: "fa-toggle-on",
         column: "col-md-6",
       },
 
