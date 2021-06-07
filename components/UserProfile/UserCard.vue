@@ -7,16 +7,17 @@
       <div class="block block-three"></div>
       <div class="block block-four"></div>
       <a href="javascript:void(0)">
-        <img class="avatar" src="img/emilyz.jpg" alt="..." />
-        <h5 class="title">Mike Andrew</h5>
+        <img class="avatar" src="img/mike.jpg" alt="..." />
+        <h5 class="title">Gustavo Garcia</h5>
       </a>
-      <p class="description">Ceo/Co-Founder</p>
+      <p class="description">Ceo-Founder</p>
     </div>
     <p></p>
     <div class="card-description">
-      Do not be scared of the truth because we need to restart the human
-      foundation in truth And I love you like Kanye loves Kanye I love Rick
-      Owens’ bed design but the back is...
+      Somos una empresa especializada en Domótica que con mucha
+      pasión nos dedicamos a automatizar y de cierta manera darle
+      algo de inteligencia y seguridad a los hogares e industrias 
+      Venezolanas con tecnología propia.
     </div>
 
     <div slot="footer" class="button-container">

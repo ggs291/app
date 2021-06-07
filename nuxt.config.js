@@ -5,7 +5,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'IoTVen GL',
+    title: 'IoTVen',
     htmlAttrs: {
       lang: 'en'
     },

@@ -1,7 +1,7 @@
 {
-  "name": "iotven_gl_app",
+  "name": "iotven_app",
   "version": "1.0.0",
-  "description": "IOTVen_GL_APP",
+  "description": "IoTVen_APP",
   "author": "IoTVen",
   "scripts": {
     "dev": "nuxt",

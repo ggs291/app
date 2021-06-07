@@ -3,7 +3,7 @@
     <div class="col-lg-4 col-md-6 ml-auto mr-auto">
       <card class="card-login card-white">
         <template slot="header">
-          <img src="img//card-primary.png" alt="" />
+          <img src="img//card-info.png" alt="" />
           <h1 class="card-title">IoTVen</h1>
         </template>
 
@@ -37,7 +37,7 @@
         <div slot="footer">
           <base-button
             native-type="submit"
-            type="primary"
+            type="info"
             class="mb-3"
             size="lg"
             @click="register()"
@@ -90,6 +90,8 @@ export default {
           this.user.name = ""
           this.user.email = ""
           this.user.password = ""
+
+          $nuxt.$router.push('/login')
           return
         }
       })
@@ -102,6 +104,7 @@ export default {
             icon: "tim-icons icon-alert-circle-exc",
             message: "User already exist :("
           })
+          $nuxt.$router.push('/login')
           return
         }else{
           this.$notify({
